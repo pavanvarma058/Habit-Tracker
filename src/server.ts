@@ -8,6 +8,9 @@ app.get('/health', (req, res) => {
   })
 })
 
+app.post('/cake/:name', (req, res) => {
+  res.send(`Hello ${req.params.name}`)
+})
 // Export the app for use in other modules (like tests)
 export { app }
 
